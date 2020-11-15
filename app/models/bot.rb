@@ -31,7 +31,7 @@ module Bot
       }
     }
 
-    HTTParty.post(messenger_url, options) unless Rails.env.test?
+    HTTParty.post(messenger_url, options)
   end
 
   private

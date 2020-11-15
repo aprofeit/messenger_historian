@@ -33,5 +33,7 @@ module MessengerHistorian
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.messenger_listener_url = 'http://localhost:3001/messages'
   end
 end
