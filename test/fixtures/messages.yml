@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kind: MyString
+  senderID: MyString
+  body: MyText
+  threadID: MyString
+  messageID: MyString
+  attachments: MyText
+  mentions: MyText
+  timestamp: MyString
+  isGroup: false
+
+two:
+  kind: MyString
+  senderID: MyString
+  body: MyText
+  threadID: MyString
+  messageID: MyString
+  attachments: MyText
+  mentions: MyText
+  timestamp: MyString
+  isGroup: false
