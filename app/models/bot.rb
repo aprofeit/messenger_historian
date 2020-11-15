@@ -10,16 +10,20 @@ module Bot
   end
 
   def process(message)
-    message = message.body.split("#{NAME} ").last.strip
+    body = message.body.split("#{NAME} ").last.strip
 
-    respond(Parser.parse(message))
+    respond({
+      body: Parser.parse(body),
+      threadID: message.threadID
+    })
   end
 
-  def respond(body)
+  def respond(message)
     options = {
       body: {
         message: {
-          body: body
+          body: message[:body],
+          threadID: message[:threadID]
         }
       }.to_json,
       headers: {
