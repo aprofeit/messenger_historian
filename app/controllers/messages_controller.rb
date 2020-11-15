@@ -1,9 +1,9 @@
 class MessagesController < ApplicationController
-  def summary
-  end
-
   def create
-    Message.create!(message_params)
+    message = Message.create!(message_params)
+    Bot.read(message)
+
+    head(:created)
   end
 
   private

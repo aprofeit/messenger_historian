@@ -1,23 +1,12 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  kind: MyString
+ping:
+  kind: message
   senderID: MyString
-  body: MyText
+  body: "@Ava Bot ping"
   threadID: MyString
   messageID: MyString
-  attachments: MyText
-  mentions: MyText
+  attachments: '[]'
+  mentions: '{ "23904890": "@Ava Bot" }'
   timestamp: MyString
-  isGroup: false
-
-two:
-  kind: MyString
-  senderID: MyString
-  body: MyText
-  threadID: MyString
-  messageID: MyString
-  attachments: MyText
-  mentions: MyText
-  timestamp: MyString
-  isGroup: false
+  isGroup: true
