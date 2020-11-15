@@ -12,10 +12,7 @@ module Bot
   def process(message)
     message = message.body.split("#{NAME} ").last.strip
 
-    case message
-    when /ping/
-      respond('pong')
-    end
+    respond(Parser.parse(message))
   end
 
   def respond(body)
@@ -36,6 +33,6 @@ module Bot
   private
 
   def messenger_url
-    Rails.env.production? ? 'https://messenger-listener.profeit.com/messages' : 'http://localhost:3001/messages'
+    Rails.configuration.messenger_listener_url
   end
 end
