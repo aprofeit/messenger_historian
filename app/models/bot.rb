@@ -4,7 +4,7 @@ module Bot
   extend self
 
   def read(message)
-    if message.mentions.values.any? { |val| val.include?(NAME) }
+    if message.body.starts_with?(NAME)
       process(message)
     end
   end
