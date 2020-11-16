@@ -9,6 +9,8 @@ module Parser
       DadJoke.get
     when /attack/i
       Attack.get
+    when /motivate/i
+      Motivate.get
     end
   end
 end

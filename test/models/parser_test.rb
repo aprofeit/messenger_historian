@@ -12,7 +12,7 @@ class ParserTest < ActiveSupport::TestCase
   end
 
   test 'attack' do
-    FakeWeb.register_uri(Rails.configuration.insult_url, body: { 'insult' => 'fuck you' }.to_json)
+    FakeWeb.register_uri(:get, Rails.configuration.insult_url, body: { 'insult' => 'fuck you' }.to_json)
     assert_equal 'fuck you', Parser.parse('attack')
   end
 end
