@@ -5,6 +5,8 @@ module Parser
     case message
     when /ping/i
       'pong'
+    when /dad joke/i
+      DadJoke.get
     end
   end
 end

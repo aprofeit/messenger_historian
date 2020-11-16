@@ -35,5 +35,6 @@ module MessengerHistorian
     config.api_only = true
 
     config.messenger_listener_url = 'http://localhost:3001/messages'
+    config.dad_joke_url = 'https://icanhazdadjoke.com/'
   end
 end
