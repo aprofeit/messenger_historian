@@ -36,5 +36,6 @@ module MessengerHistorian
 
     config.messenger_listener_url = 'http://localhost:3001/messages'
     config.dad_joke_url = 'https://icanhazdadjoke.com/'
+    config.insult_url = 'https://evilinsult.com/generate_insult.php?lang=en&type=json'
   end
 end

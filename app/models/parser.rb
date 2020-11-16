@@ -7,6 +7,8 @@ module Parser
       'pong'
     when /dad joke/i
       DadJoke.get
+    when /attack/i
+      Attack.get
     end
   end
 end
